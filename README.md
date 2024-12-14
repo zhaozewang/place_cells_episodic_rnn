@@ -19,19 +19,26 @@ Then, at any given moment, the agent receives a location-specific sensory respon
 <picture><img src="./imgs/episodic_mem_RAE.png" width="70%"/></picture>
 </p>
 
-### Emerging Place Cells
+### Results
+#### Emerging Place Cells
 We observed the emergence of place cells in the encoding layer of the RAE.
 <p align="center">
 <picture><img src="./imgs/RAE_results.png" width="70%"/></picture>
 </p>
+
+#### Remapping and the Reversion of Place Fields After Remapping
 Our model replicates the characteristic remapping behavior of the place cells.
 <p align="center">
-<picture><img src="./imgs/remapping.png" width="100%"/></picture>
+<picture><img src="./imgs/remapping.png" width="70%"/></picture>
 </p>
+
+#### Place Cells as Memory Cells Predicts Place Fields in Higher-Dimensional and/or Abstract Spaces
 We also predict the place fields in 3D space or higher-dimensional abstract spaces.
 <p align="center">
-<picture><img src="./imgs/3d_place_fields.png" width="30%"/></picture>
+<picture><img src="./imgs/3d_place_fields.png" width="50%"/></picture>
 </p>
+
+#### Orthogonal Representations of Different Rooms and Stability of Spatial Representations Across Remapping
 The model forms orthogonal representations for distinct environments, with place fields remaining stable across different environments over extended periods. The figure below illustrates the gradual drift of a single place field within the same room over 30 cycles. The RAE is trained for 20 10-minute trials between consecutive cycles, demonstrating the stability of place fields within the same environment.
 <p align="center">
 <picture><img src="./imgs/drifting_place_cells.png" width="100%"/></picture>
