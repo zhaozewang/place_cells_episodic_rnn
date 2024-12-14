@@ -1,0 +1,10 @@
+# Configurations for the loss
+# ----------------------------
+pattern_completion:
+  type: mse
+  lambda: 1
+firing_rate:
+  type: fr
+  lambda: 10
+  params:
+    metric: l2
