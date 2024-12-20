@@ -8,7 +8,7 @@ class PlaceCellsEpisodicRNN(nnl.RNNLayer):
     The Place Cells Episodic RNN is a recurrent neural network implementation.
     This class serves as a constructor for a custom RNN using nn4n.
     """
-    def __init__(self, cfg):
+    def __init__(self, cfg: dict):
         """
         Initialize the Place Cells Episodic RNN.
         
@@ -32,10 +32,10 @@ class PlaceCellsEpisodicRNN(nnl.RNNLayer):
             preact_noise=cfg.preact_noise,
             postact_noise=cfg.postact_noise
         )
-        
+
         # Create the readout layer
         readout_layer = nnl.LinearLayer(input_dim=cfg.hidden_dim, output_dim=cfg.output_dim)
-        
+
         # Initialize the parent RNNLayer with the constructed layers
         super().__init__(
             hidden_layers=[hidden_layer],

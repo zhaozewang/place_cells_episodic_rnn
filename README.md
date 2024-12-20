@@ -1,6 +1,7 @@
 # Place Cells Episodic RNN
 *We are still in the process of cleaning up some parts of the codebase. We apologize for the inconvenience that the code might not be fully functional at the moment. Please check back soon for updates.*
-## Official Implementation of Time Makes Space: Emergence of Place Fields in Networks Encoding Temporally Continuous Sensory Experiences. In *NeurIPS 2024*.
+### Official Implementation of:
+> Z. Wang*, R. W. Di Tullio*, S. Rooke, and V. Balasubramanian. Time Makes Space: Emergence of Place Fields in Networks Encoding Temporally Continuous Sensory Experiences. In *NeurIPS 2024*.
 
 In this paper, we model the hippocampal CA3 area as a recurrent autoencoder designed to recall and reconstruct sensory experiences from noisy, partial cues in simulated environments. By training the model with agents navigating realistic trajectories through spatially smoothed sensory maps, we demonstrate that imposing an activity constraint during training results in the emergence of spatially localized firing fields, resembling place cells, in the encoding layer.
 
@@ -9,7 +10,9 @@ In this paper, we model the hippocampal CA3 area as a recurrent autoencoder desi
 #### NN4Neurosim
 The RNN used in this project is from [NN4Neurosim](https://github.com/NN4Neurosim/nn4n), the documentation can be found [here](https://nn4n.org).
 
-### A Recurrent Autoencoder Model of Episodic Memory Storage
+
+## About the Project
+#### A Recurrent Autoencoder Model of Episodic Memory Storage
 Inspired by the classic episodic memory theory of the hippocampus, suggest that the hippocampus stores sensory experiences gathered during their spatial navigation. Testing this, we first simulate the rodent movement in a 2D environment. An illustration of the trajectory is shown below.
 <p align="center">
 <picture><img src="./imgs/trajectory.gif" width="40%"/></picture>
@@ -19,7 +22,6 @@ Then, at any given moment, the agent receives a location-specific sensory respon
 <picture><img src="./imgs/episodic_mem_RAE.png" width="70%"/></picture>
 </p>
 
-### Results
 #### Emerging Place Cells
 We observed the emergence of place cells in the encoding layer of the RAE.
 <p align="center">

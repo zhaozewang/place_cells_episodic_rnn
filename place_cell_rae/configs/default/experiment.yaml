@@ -1,14 +1,14 @@
 # Configurations for the experiment
 # ----------------------------
-
 rand_seed: 42
 n_test: 20
 test_dur_s: 40
 batch_size: 500
+trial_duration: 1200
 warmup_duration: 300
 
 window_stride: 1
-sampling_window: 300
+window_size: 300
 episode_duration: 1
 sampling_alpha: 3
 sampling_beta: 0.05

@@ -1,0 +1,10 @@
+# Configurations for the loss
+# ----------------------------
+pattern_completion:   # DO NOT MODIFY THE NAME, otherwise change trainer.py accordingly
+  type: mse
+  lambda: 1
+firing_rate:          # DO NOT MODIFY THE NAME, otherwise change trainer.py accordingly
+  type: fr
+  lambda: 20
+  params:
+    metric: l2
