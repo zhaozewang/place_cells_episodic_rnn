@@ -1,0 +1,25 @@
+# created By: Zhaoze Wang
+from setuptools import setup, find_packages
+from pathlib import Path
+
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
+
+setup(
+    name="nn4n",
+    version="1.2.0",
+    description="Neural Networks for Neurosimulation",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    author="Zhaoze Wang",
+    license="MIT",
+    packages=find_packages(),
+    install_requires=[
+        "numpy",
+        "matplotlib",
+        "torch",
+        "IPython",
+        "scipy==1.12.0",
+    ],
+    python_requires=">=3.9",
+)

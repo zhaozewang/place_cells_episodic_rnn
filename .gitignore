@@ -1,6 +1,6 @@
 # Custom
-*.ipynb
 .DS_Store
+trajectories/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
